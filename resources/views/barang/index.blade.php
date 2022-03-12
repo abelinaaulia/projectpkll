@@ -8,7 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+<<<<<<< HEAD
     <title> Stok Barang</title>
+=======
+    <title>Startmin - Bootstrap Admin Theme</title>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('backend/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -56,7 +60,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
+<<<<<<< HEAD
                     <h1 class="page-header">Stok Barang</h1>
+=======
+                    <h1 class="page-header">Data Barang</h1>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -65,7 +73,11 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
+<<<<<<< HEAD
                            Stok Barang
+=======
+                            Data Barang
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 
                         </div>
                         <!-- /.panel-heading -->

@@ -19,7 +19,11 @@ use App\Http\Controllers\LaporanpeminjamanController;
 */
 
 Route::get('/', function () {
+<<<<<<< HEAD
     return view('auth.login');
+=======
+    return view('welcome');
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 });
 
 Auth::routes(
@@ -42,9 +46,15 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
      Route::resource('barangkeluar', BarangkeluarController::class);
     Route::resource('peminjaman', PeminjamanController::class);
      Route::resource('pengembalian', PengembalianController::class);
+<<<<<<< HEAD
     Route::get('laporanpeminjaman', [LaporanpeminjamanController::class, 'index'])->name('laporanpeminjaman.index');
     Route::post('laporanpeminjaman', [LaporanpeminjamanController::class, 'index']);
 
 });
 
 
+=======
+Route::get('laporanpeminjaman', [LaporanpeminjamanController::class, 'index'])->name('laporanpeminjaman.index');
+Route::post('laporanpeminjaman', [LaporanpeminjamanController::class, 'index']);
+});
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a

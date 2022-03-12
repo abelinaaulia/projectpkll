@@ -1,7 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+<<<<<<< HEAD
 // use RealRashid\SweeAlert\Facades\Alert;
+=======
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 use App\Models\barang;
 use App\Models\barangmasuk;
 use Illuminate\Http\Request;
@@ -49,12 +52,17 @@ class BarangmasukController extends Controller
         $barangmasuk->jumlah = $request->jumlah;
         $barangmasuk->tgl_masuk = $request->tgl_masuk;
         $barangmasuk->save();
+<<<<<<< HEAD
 
         $barang = new barang; $barang->id_barangmasuk = $barangmasuk->id;
         $barang->stok = $request->jumlah;
         $barang->kondisi = $request->kondisi;
         $barang->save();
         // Alert::success('Good Job', 'Data Saved Successfully');
+=======
+        $barang = new barang; $barang->id_barangmasuk = $barangmasuk->id;
+        $barang->stok = $request->jumlah; $barang->kondisi = $request->kondisi; $barang->save();
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
         return redirect()->route('barangmasuk.index');
     }
 
@@ -103,7 +111,10 @@ class BarangmasukController extends Controller
         $barangmasuk->jumlah = $request->jumlah;
         $barangmasuk->tgl_masuk = $request->tgl_masuk;
         $barangmasuk->save();
+<<<<<<< HEAD
         //  Alert::success('Good Job', 'Data Saved Successfully');
+=======
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
         return redirect()->route('barangmasuk.index');
     }
 
@@ -118,6 +129,7 @@ class BarangmasukController extends Controller
         $barangmasuk = barangmasuk::findOrFail($id);
         $barangmasuk->delete();
         return redirect()->route('barangmasuk.index');
+<<<<<<< HEAD
 
 
         // if (!barangmasuk::destroy($id)) {
@@ -129,3 +141,7 @@ class BarangmasukController extends Controller
 }
 
 
+=======
+    }
+}
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a

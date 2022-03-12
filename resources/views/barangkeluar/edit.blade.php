@@ -8,7 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+<<<<<<< HEAD
     <title>Barang Keluar</title>
+=======
+    <title>Startmin - Bootstrap Admin Theme</title>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('backend/css/bootstrap.min.css') }}" rel="stylesheet">

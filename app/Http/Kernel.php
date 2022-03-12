@@ -37,8 +37,11 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+<<<<<<< HEAD
             \RealRashid\SweetAlert\ToSweetAlert::class,
 
+=======
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
         ],
 
         'api' => [

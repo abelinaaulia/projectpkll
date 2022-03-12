@@ -19,7 +19,11 @@ class CreateBarangkeluarsTable extends Migration
             $table->bigInteger('jumlah');
             $table->date('tgl_keluar');
             $table->foreign('id_barang')->references('id')->
+<<<<<<< HEAD
                 on('barangs');
+=======
+            on('barangs')->onUpdate('cascade')->onDelete('cascade');
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
             $table->timestamps();
         });
     }

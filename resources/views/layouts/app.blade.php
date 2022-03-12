@@ -40,7 +40,11 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
+<<<<<<< HEAD
                             {{-- @if (Route::has('login'))
+=======
+                            @if (Route::has('login'))
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
@@ -50,7 +54,11 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
+<<<<<<< HEAD
                             @endif --}}
+=======
+                            @endif
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

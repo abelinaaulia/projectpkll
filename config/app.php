@@ -161,7 +161,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+<<<<<<< HEAD
         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
+=======
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 
         /*
          * Package Service Providers...
@@ -175,7 +178,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+<<<<<<< HEAD
         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
+=======
+
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
     ],
 
     /*
@@ -230,7 +237,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+<<<<<<< HEAD
         'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
+=======
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 
     ],
 

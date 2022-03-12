@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "d5148d771bd15fc8f8c35f2050762b30",
+=======
+    "content-hash": "cf14086919a839fe740e00554e4baff6",
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2908,6 +2912,7 @@
             "time": "2021-09-25T23:10:38+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "realrashid/sweet-alert",
             "version": "v5.0.0",
             "source": {
@@ -2998,6 +3003,8 @@
             "time": "2022-02-04T09:38:53+00:00"
         },
         {
+=======
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
             "name": "swiftmailer/swiftmailer",
             "version": "v6.3.0",
             "source": {

@@ -8,7 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+<<<<<<< HEAD
     <title>Pengembalian</title>
+=======
+    <title>Startmin - Bootstrap Admin Theme</title>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('backend/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -66,8 +70,12 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             Data Pengembalian
+<<<<<<< HEAD
                             <a href="{{ route('pengembalian.create') }}"
                                 class="btn btn-sm btn-primary float-right">Tambah Data </a>
+=======
+                            <a href="{{ route('pengembalian.create') }}" class="btn btn-sm btn-primary float-right">Tambah Data </a>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -91,6 +99,7 @@
                                                 <td>{{ $data->peminjaman->peminjam }}</td>
                                                 <td>{{ $data->tgl_kembali }}</td>
                                                 <td>
+<<<<<<< HEAD
                                                     <form action="{{ route('pengembalian.destroy', $data->id) }}"
                                                         method="post">
                                                         @method('delete')
@@ -101,6 +110,14 @@
                                                             class="btn btn-info">Show</a> --}}
                                                         <button type="submit" class="btn btn-info"
                                                             onclick="return confirm('Apakah anda yakin menghapus ini?');">Delete</button>
+=======
+                                                    <form action="{{route('pengembalian.destroy', $data->id)}}" method="post">
+                                                        @method('delete')
+                                                        @csrf
+                                                    <a href="{{route('pengembalian.edit',$data->id)}}" class="btn btn-outline-info">Edit</a>
+                                                    <a href="{{route('pengembalian.show',$data->id)}}" class="btn btn-outline-warning">Show</a>
+                                                    <button type="submit" class="btn btn-outline-danger" onclick="return confirm('Apakah anda yakin menghapus ini?');">Delete</button>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -128,11 +145,15 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
+<<<<<<< HEAD
     @include('sweetalert::alert')
+=======
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
     <script src="{{ asset('backend/js/jquery.min.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ asset('backend/js/bootstrap.min.js') }}"></script>
+<<<<<<< HEAD
     @section('js')
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>
@@ -157,6 +178,8 @@
         </script>
     @endsection
 
+=======
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="{{ asset('backend/js/metisMenu.min.js') }}"></script>

@@ -44,7 +44,11 @@ class PeminjamanController extends Controller
         'peminjam' => 'required',
         'jk' => 'required',
         'no_telp' => 'required',
+<<<<<<< HEAD
         'jumlah' => 'required|numeric',
+=======
+        'jumlah' => 'required',
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
         'tgl_pinjam' => 'required',
 
     ]);
@@ -99,12 +103,20 @@ class PeminjamanController extends Controller
     public function update(Request $request, $id)
     {
         //validasi data
+<<<<<<< HEAD
         $validated = $request->validate([
+=======
+        $request->validate([
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
           'id_barang' => 'required',
           'peminjam' => 'required',
           'jk' => 'required',
           'no_telp' => 'required',
+<<<<<<< HEAD
           'jumlah' => 'required|numeric',
+=======
+          'jumlah' => 'required',
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
           'tgl_pinjam' => 'required',
 
       ]);

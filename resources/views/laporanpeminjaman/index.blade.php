@@ -8,7 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+<<<<<<< HEAD
     <title>Laporan Peminjaman</title>
+=======
+    <title>Startmin - Bootstrap Admin Theme</title>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('backend/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -69,12 +73,20 @@
                             <div style="display: flex; justify-content: space-between;">
 
                                 <div class="">
+<<<<<<< HEAD
                                     Laporan Peminjaman
 
                                 </div>
                                 <div class="">
                                     <form action="{{ route('laporanpeminjaman.index') }}" method="post"
                                         style="display: flex;">
+=======
+                                Laporan Peminjaman
+
+                                </div>
+                                <div class="">
+                                    <form action="{{ route('laporanpeminjaman.index') }}" method="post"  style="display: flex;">
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
                                         @csrf
                                         <button type="submit" class="btn btn-primary">Pilih Data</button>
 
@@ -107,8 +119,12 @@
 
                                                 <th>{{ $no++ }}</th>
                                                 <td>{{ $data->peminjam }}</td>
+<<<<<<< HEAD
                                                 <td>{{ $data->status ? 'Sudah Dikembalikan' : 'Belum Dikembalikan' }}
                                                 </td>
+=======
+                                                <td>{{ $data->status ? 'Sudah Dikembalikan' : 'Belum Dikembalikan' }}</td>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 
                                             </tr>
                                         @endforeach

@@ -8,7 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+<<<<<<< HEAD
     <title>Barang Keluar</title>
+=======
+    <title>Startmin - Bootstrap Admin Theme</title>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('backend/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -95,10 +99,16 @@
                                                     <form action="{{route('barangkeluar.destroy', $data->id)}}" method="post">
                                                         @method('delete')
                                                         @csrf
+<<<<<<< HEAD
                                                     <a href="{{route('barangkeluar.edit',$data->id)}}" class="btn btn-info">Edit</a>
                                         {{-- <a href="{{route('barangkeluar.show',$data->id)}}" class="btn btn-info">Show</a> --}}
                                                         <button type="submit" class="btn btn-info"
                                                             onclick="return confirm('Apakah anda yakin menghapus ini?');">Delete</button>
+=======
+                                                    <a href="{{route('barangkeluar.edit',$data->id)}}" class="btn btn-outline-info">Edit</a>
+                                        <a href="{{route('barangkeluar.show',$data->id)}}" class="btn btn-outline-warning">Show</a>
+                                        <button type="submit" class="btn btn-outline-danger" onclick="return confirm('Apakah anda yakin menghapus ini?');">Delete</button>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -126,11 +136,15 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
+<<<<<<< HEAD
     @include('sweetalert::alert')
+=======
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
     <script src="{{ asset('backend/js/jquery.min.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ asset('backend/js/bootstrap.min.js') }}"></script>
+<<<<<<< HEAD
      @section('js')
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>
@@ -154,6 +168,8 @@
             });
         </script>
     @endsection
+=======
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="{{ asset('backend/js/metisMenu.min.js') }}"></script>

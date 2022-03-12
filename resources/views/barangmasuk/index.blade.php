@@ -8,7 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+<<<<<<< HEAD
     <title>Barang Masuk</title>
+=======
+    <title>Startmin - Bootstrap Admin Theme</title>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('backend/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -45,7 +49,10 @@
         <!-- /.navbar-top-links -->
         @include('layouts.bagian.sidebar')
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
         <!-- /.nav-second-level -->
         </li>
         </ul>
@@ -65,6 +72,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
+<<<<<<< HEAD
                         {{-- <div class="panel-heading">
                           Barang Masuk
                             <a href="{{ Route('create-old') }}" class="btn btn-sm btn-info float-right mr-12">Tambah Data Lama</a>
@@ -77,6 +85,11 @@
                                 class="btn btn-sm btn-primary float-right" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">Tambah Data</a>
 
+=======
+                        <div class="panel-heading">
+                          Barang Masuk
+                            <a href="{{ route('barangmasuk.create') }}" class="btn btn-sm btn-primary float-right">Tambah Data</a>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -102,6 +115,7 @@
                                                 <td>{{ $data->jumlah }}</td>
                                                 <td>{{ $data->tgl_masuk }}</td>
                                                 <td>
+<<<<<<< HEAD
                                                     <form action="{{ route('barangmasuk.destroy', $data->id) }}"
                                                         method="post">
                                                         @method('delete')
@@ -115,6 +129,18 @@
                                                 </td>
                                             </tr>
                                         @endforeach
+=======
+                                                    <form action="{{route('barangmasuk.destroy', $data->id)}}" method="post">
+                                                        @method('delete')
+                                                        @csrf
+                                                    <a href="{{route('barangmasuk.edit',$data->id)}}" class="btn btn-outline-info">Edit</a>
+                                                    <a href="{{route('barangmasuk.show',$data->id)}}" class="btn btn-outline-warning">Show</a>
+                                        <button type="submit" class="btn btn-outline-danger" onclick="return confirm('Apakah anda yakin menghapus ini?');">Delete</button>
+                                                </td>
+                                            </tr>
+                                        @endforeach
+
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
                                     </tbody>
                                 </table>
 
@@ -138,6 +164,7 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
+<<<<<<< HEAD
     @include('sweetalert::alert')
 
     <!-- Bootstrap Core JavaScript -->
@@ -165,6 +192,13 @@
             });
         </script>
     @endsection
+=======
+    <script src="{{ asset('backend/js/jquery.min.js') }}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ asset('backend/js/bootstrap.min.js') }}"></script>
+
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
     <!-- Metis Menu Plugin JavaScript -->
     <script src="{{ asset('backend/js/metisMenu.min.js') }}"></script>
 

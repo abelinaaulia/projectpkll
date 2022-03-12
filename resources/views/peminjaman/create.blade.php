@@ -8,7 +8,11 @@
     <meta name="description" content="">
     <meta name="jenisBarang" content="">
 
+<<<<<<< HEAD
     <title>Peminjaman</title>
+=======
+    <title>Startmin - Bootstrap Admin Theme</title>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('backend/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -87,7 +91,11 @@
                                 @enderror
                             </div>
                             <div class="panel-body">
+<<<<<<< HEAD
                                 <label> Nama Peminjam</label>
+=======
+                                <label>Peminjam</label>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
                                 <input type="text" class="form-control" name="peminjam">
                             </div>
 
@@ -111,7 +119,11 @@
                             <div class="panel-body">
                                 <label>Jumlah</label>
                                 <input type="number" class="form-control" name="jumlah" min="1">
+<<<<<<< HEAD
                                 <option value="1">*tidak bisa menggunakan text</option>
+=======
+                                <option value="1">Tidak bisa menggunakan text</option>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
                                 @error('jumlah') {{ $message }} @enderror
                             </div>
 

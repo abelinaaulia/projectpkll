@@ -1,7 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
 use App\Models\barang;
 use App\Models\barangkeluar;
 use App\Models\barangmasuk;
@@ -29,7 +32,11 @@ class BarangkeluarController extends Controller
     {
         $barangkeluar = barangkeluar::all();
         $barang = barangmasuk::all();
+<<<<<<< HEAD
         return view('barangkeluar.create', compact('barangkeluar', 'barang'));
+=======
+        return view('barangkeluar.create', compact('barangkeluar','barang'));
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
     }
 
     /**
@@ -41,6 +48,7 @@ class BarangkeluarController extends Controller
     public function store(Request $request)
     {
         ///validasi data
+<<<<<<< HEAD
         $request->validate([
             'id_barang' => 'required',
             'jumlah' => 'required',
@@ -57,6 +65,23 @@ class BarangkeluarController extends Controller
         $barang->stok -= $request->jumlah;
         $barang->save();
         return redirect()->route('barangkeluar.index');
+=======
+      $request->validate([
+        'id_barang' => 'required',
+        'jumlah' => 'required',
+        'tgl_keluar' => 'required',
+    ]);
+
+     $barangkeluar = new barangkeluar;
+     $barangkeluar->id_barang = $request->id_barang;
+     $barangkeluar->jumlah = $request->jumlah;
+     $barangkeluar->tgl_keluar = $request->tgl_keluar;
+
+     $barangkeluar->save();
+     $barang = barang::findOrFail($request->id_barang);
+        $barang->stok -= $request->jumlah; $barang->save();
+     return redirect()->route('barangkeluar.index');
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
     }
 
     /**
@@ -95,6 +120,7 @@ class BarangkeluarController extends Controller
     public function update(Request $request, $id)
     {
         ///validasi data
+<<<<<<< HEAD
         $request->validate([
             'id_barang' => 'required',
             'jumlah' => 'required',
@@ -111,6 +137,23 @@ class BarangkeluarController extends Controller
         $barang->stok -= $barangkeluar->jumlah;
         $barang->save();
         return redirect()->route('barangkeluar.index');
+=======
+      $request->validate([
+        'id_barang' => 'required',
+        'jumlah' => 'required',
+        'tgl_keluar' => 'required',
+    ]);
+
+     $barangkeluar = barangkeluar::findOrFail($id);
+     $barangkeluar->id_barang = $request->id_barang;
+     $barangkeluar->jumlah = $request->jumlah;
+     $barangkeluar->tgl_keluar = $request->tgl_keluar;
+
+     $barangkeluar->save();
+     $barang = barang::findOrFail($request->id_barang);
+        $barang->stok -= $barangkeluar->jumlah; $barang->save();
+     return redirect()->route('barangkeluar.index');
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
     }
 
     /**

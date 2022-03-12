@@ -1,6 +1,10 @@
 <div class="navbar-default sidebar" role="navigation">
     <div class="sidebar-nav navbar-collapse">
+<<<<<<< HEAD
         <div class="nav" id="side-menu">
+=======
+        <ul class="nav" id="side-menu">
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
             <li class="sidebar-search">
                 <div class="input-group custom-search-form">
                 </div>
@@ -18,6 +22,7 @@
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Inventaris Sekolah<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
 
+<<<<<<< HEAD
                      <li>
                         <a href="{{route('barangmasuk.index')}}">Barang Masuk</a>
                     </li>
@@ -25,6 +30,15 @@
                         <a href="{{route('barang.index')}}">Stok Barang </a>
                     </li>
                       <li>
+=======
+                    <li>
+                        <a href="{{route('barang.index')}}">Barang</a>
+                    </li>
+                    <li>
+                        <a href="{{route('barangmasuk.index')}}">Barang Masuk</a>
+                    </li>
+                    <li>
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
                         <a href="{{route('barangkeluar.index')}}">Barang Keluar</a>
                     </li>
                     <li>
@@ -38,7 +52,10 @@
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
+<<<<<<< HEAD
             </li>
         </div>
     </div>
 </div>
+=======
+>>>>>>> 6f8881011d14a6a1e0dde8f298a37e1e47aa0a5a
